@@ -1,0 +1,240 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin:  0px;
+    font-family: 'roboto',sans-serif;
+}
+
+h1{font-size: 3.5em;}
+h2{font-size: 2.7em;}
+h3{font-size: 2em;}
+p{font-size: 1.25em;}
+ul{list-style: none;}
+li{font-size: 1,25em;}
+
+button{
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 15px;
+    border: 2px solid black;
+    color: rgb(255, 255, 255);
+    background-color: rgb(106, 6, 6)
+}
+
+button:hover{
+    background-color: brown;
+}
+
+.container{
+    max-width: 1400px;
+    margin: auto;
+}
+
+header{
+    background-color: rgb(105, 6, 6);
+}
+
+header .logo{
+    font-size: 40px;
+    color: #DF0101;
+    text-align: center;
+    text-shadow: 0 0 4px #fff,
+    0 -5px 4px #ff3,
+    2px -10px 6px #fd3,
+    -2px -15px 11px #f80,
+    2px -25px 18px #f20;
+    margin: 0;
+    padding: 25px 30px; 
+
+}
+
+header .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+header .nav{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+header a{
+    padding: 5px 12px;
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+}
+
+#hero{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 90vh;
+    background-image: url(RESTO.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    background-position: center center;
+    border-radius: 15px;
+    -webkit-text-stroke: 2px black;
+}
+
+#SomosFitme{
+    text-align: center;
+    padding: 50px 12px;
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+
+}
+
+#SomosFitme .container{
+    text-align: center;
+    margin: 100px 12px;
+}
+
+#recetas{
+background-color: rgb(0, 0, 0);
+color: white;
+text-align: center;
+padding: 100px 12px;
+border-radius: 15px;
+-webkit-text-stroke: 2px black;
+}
+
+#recetas h2{
+    margin-top: 0px;
+    font-style: italic;
+    -webkit-text-stroke: 2px black;
+}
+
+#recetas p{
+display: none;
+color: white;
+}
+
+#recetas .carta{
+color: white;
+}
+
+.carta:first-child{
+    background-image: url(COCINA1.jpg);
+    background-position: center center;
+    background-size: cover;
+    border-radius: 15px;
+}
+
+.carta:nth-child(2){
+    background-image:url(COCINA2.jpg);
+    background-position: center center;
+    background-size: cover;
+    border-radius: 15px;
+}
+
+.carta:last-child{
+    background-image: url(COMIDA.jpg);
+    background-position: center center;
+    background-size: cover;
+    border-radius: 15px;
+}
+
+#contacto .container{
+    text-align: center;
+    padding: 200px 12px;
+}
+
+#contacto li{
+    padding: 16px 0px;
+    font-weight: bold;
+}
+
+#nodudes{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 80vh;
+    background-image: url(CONTACTO.jpg);
+    background-position: center center;
+    background-size: cover;
+    border-radius: 20px;
+    color: white;
+    -webkit-text-stroke: 2px black;
+}
+
+#nodudes h2{
+    font-size: 3em;
+}
+
+footer{
+    background-color: rgb(105, 6, 6);
+}
+
+footer p{
+    margin: 0;
+}
+
+footer .container{
+    padding: 25px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (min-width:720px){
+    header{
+        position: fixed;
+        width: 100%;
+    }
+
+    header .container{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    header nav{
+        flex-direction: row;
+        padding-bottom: 0%;
+        padding-right: 20px;
+    }
+
+    #recetas .comida{
+        display: flex;
+        justify-content: center;
+    }
+
+    #recetas p{
+        display: block;
+        margin-bottom: 30px;
+    }
+
+    #recetas h3{
+        margin-top: 0%;
+    }
+
+    #recetas .carta{
+        padding: 50px;
+        margin: 30px;
+    }
+
+
+   
+}
+
+
+
+
+
+
+
+
